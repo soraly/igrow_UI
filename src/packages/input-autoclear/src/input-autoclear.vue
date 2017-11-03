@@ -1,9 +1,9 @@
-<style lang="css">
+<style lang="scss">
   @import "../../../src/style/var.css";
   
   .am-input-autoclear {
     .required {
-     color: $red;
+     color: red;
     }
   }
 </style>

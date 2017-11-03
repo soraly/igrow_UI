@@ -56,6 +56,11 @@
         "path": "/mtswipe",
         "name": "Mtswipe",
         "icon": "toast"
+      },
+      {
+        "path": "/common_input",
+        "name": "Common_input",
+        "icon": "toast"
       }
     ]
   }

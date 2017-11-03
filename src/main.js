@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-
-console.log(router,'router')
 import { install as ZfbUi } from './src/index';
 
- Vue.use(ZfbUi);
+Vue.use(ZfbUi);
 
 new Vue({
   el: '#app',

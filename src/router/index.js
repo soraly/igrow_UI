@@ -6,9 +6,9 @@ import swipe from '../pages/swipe.vue'
 import alert from '../pages/alert.vue'
 import select from '../pages/select.vue'
 import catalog from '../pages/catalog.vue'
-
+import common_input from '../pages/common_input.vue'
 var arr = [
-    swipe, alert, select
+    swipe, alert, select, common_input
 ]
 Vue.use(vueRouter)
 

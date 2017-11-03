@@ -18,13 +18,33 @@
 
             }
         },
+        methods: {
+            setRem(){
+                var deviceWidth = $(window).outerWidth();
+                if (deviceWidth > 640) {
+                    $("html").css("font-size", "100px");
+                } else {
+                    $("html").css("font-size", deviceWidth / 640 * 100 + 'px');
+                }
+            }
+        },
+        created(){
+            var _this = this;
+            _this.setRem();
+            window.onorientationchange = function () {
+                _this.setRem();
+            };
+            window.onresize = function () {
+                _this.setRem();
+            };
+        },
         mounted(){
           console.log(this.$route)
         },
         computed: {
             visible: function(){
                 if(this.$route.fullPath != '/'){
-                    return true
+                    return false
                 }else {
                     return false
                 }
@@ -47,6 +67,7 @@
         -webkit-overflow-scrolling: touch;
         user-select: none;
         height: 100%;
+        font-size: 14px;
     }
 
     #app {
