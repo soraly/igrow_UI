@@ -1,21 +1,25 @@
 <template>
-	<div class="component page-alert">
-		<h1 class="page-title">Alert</h1>
-		
-		<div style="text-align: center" class="am-wingblank wb15px">
-			<button type="button" class="am-button" @click="isAlert1=true" style="margin-top: 10px;">删除类(班级主页)</button>
-			<button type="button" class="am-button" @click="isAlert2=true" style="margin-top: 10px;">输入类(实习报告)</button>
-			<!--<button type="button" class="am-button" @click="isAlert2=true" style="margin-top: 10px;">图片文字居中-蓝按钮</button>-->
-			<!--<button type="button" class="am-button" @click="isAlert3=true" style="margin-top: 10px;">图片文字居中-白按钮</button>-->
-			<!--<button type="button" class="am-button" @click="isAlert4=true" style="margin-top: 10px;">纯文字居中</button>-->
-		</div>
-		<zfb-alert v-if="isAlert1" :my-list="alertList1" @lzx="lzxtest" @close="closeAlert"></zfb-alert>
-		<zfb-alert v-if="isAlert2" :my-list="alertList2" @close="isAlert2=false"></zfb-alert>
-		<zfb-alert v-if="isAlert3" :my-list="alertList3" @close="isAlert3=false"></zfb-alert>
-		<zfb-alert v-if="isAlert4" :my-list="alertList4" @close="isAlert4=false"></zfb-alert>
+	<div class="component page-upload">
+		<h1 class="page-title">upload</h1>
+
+		<zfb-upload></zfb-upload>
+		<!--<div style="text-align: center" class="am-wingblank wb15px">-->
+			<!--<button type="button" class="am-button" @click="isAlert1=true" style="margin-top: 10px;">删除类(班级主页)</button>-->
+			<!--<button type="button" class="am-button" @click="isAlert2=true" style="margin-top: 10px;">输入类(实习报告)</button>-->
+			<!--&lt;!&ndash;<button type="button" class="am-button" @click="isAlert2=true" style="margin-top: 10px;">图片文字居中-蓝按钮</button>&ndash;&gt;-->
+			<!--&lt;!&ndash;<button type="button" class="am-button" @click="isAlert3=true" style="margin-top: 10px;">图片文字居中-白按钮</button>&ndash;&gt;-->
+			<!--&lt;!&ndash;<button type="button" class="am-button" @click="isAlert4=true" style="margin-top: 10px;">纯文字居中</button>&ndash;&gt;-->
+		<!--</div>-->
+		<!--<zfb-alert v-if="isAlert1" :my-list="alertList1" @lzx="lzxtest" @close="closeAlert"></zfb-alert>-->
+		<!--<zfb-alert v-if="isAlert2" :my-list="alertList2" @close="isAlert2=false"></zfb-alert>-->
+		<!--<zfb-alert v-if="isAlert3" :my-list="alertList3" @close="isAlert3=false"></zfb-alert>-->
+		<!--<zfb-alert v-if="isAlert4" :my-list="alertList4" @close="isAlert4=false"></zfb-alert>-->
 	</div>
 </template>
 <style lang="scss">
+	.page-upload {
+		padding: 0 20px;
+	}
 	.am-button {
 		font-size: 18px;
 		width: 80%;

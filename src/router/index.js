@@ -4,14 +4,16 @@ import configs from '../config'
 
 import swipe from '../pages/swipe.vue'
 import alert from '../pages/alert.vue'
+import Upload from '../pages/upload.vue'
 import select from '../pages/select.vue'
 import catalog from '../pages/catalog.vue'
 import common_input from '../pages/common_input.vue'
 var arr = [
-    swipe, alert, select, common_input
+    swipe, alert, select, common_input, Upload
 ]
 Vue.use(vueRouter)
 
+//获取arr中具体component的_file路径，与config里的path匹配，匹配成功则推入routes
 var routes = [];
 configs.forEach((config)=>{
     if(config.list && config.list.length){

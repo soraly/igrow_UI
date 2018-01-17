@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <router-link to="/" v-show="visible">
-            <i class="iconfont icon-xiangzuo"></i>
+            <i class="iconfont icon-arrow-left page-back"></i>
         </router-link>
         <router-view></router-view>
     </div>
@@ -44,7 +44,7 @@
         computed: {
             visible: function(){
                 if(this.$route.fullPath != '/'){
-                    return false
+                    return true
                 }else {
                     return false
                 }
@@ -86,8 +86,9 @@
         width: 40px;
         height: 40px;
         text-align: center;
+        font-size: 30px;
         i {
-            font-size: 24px;
+            font-size: 30px;
             line-height: 40px;
         }
     }
@@ -98,19 +99,17 @@
         padding: 20px 0;
         text-align: center;
         display: block;
-        line-height: 1;
+        line-height: 16px;
     }
 
     .page-demo {
         padding-bottom: 50px;
-
         .indexicon {
+            width: 30px;
             font-size: 22px;
             color: #26a2ff;
             display: inline-block;
-            width: 30px;
             vertical-align: middle;
-
             &.icon-swipe {
                 font-size: 26px;
             }

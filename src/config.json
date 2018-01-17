@@ -48,6 +48,11 @@
         "icon": "toast"
       },
       {
+        "path": "/upload",
+        "name": "Upload",
+        "icon": "toast"
+      },
+      {
         "path": "/select",
         "name": "Select",
         "icon": "toast"

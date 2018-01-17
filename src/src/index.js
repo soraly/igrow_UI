@@ -1,6 +1,7 @@
 import InputAutoclear from '../packages/input-autoclear';
 import SearchAutoclear from '../packages/search-autoclear';
 import Alert from '../packages/alert';
+import Upload from '../packages/upload';
 import MultilevelChoose from '../packages/multilevel-choose';
 import Validity from '../packages/validity';
 import Swipe from '../packages/swipe';
@@ -17,6 +18,7 @@ const install = function (Vue) {
   Vue.component(InputAutoclear.name, InputAutoclear);
   Vue.component(SearchAutoclear.name, SearchAutoclear);
   Vue.component(Alert.name, Alert);
+  Vue.component(Upload.name, Upload);
   Vue.component(MultilevelChoose.name, MultilevelChoose);
   Vue.component(Swipe.name, Swipe);
   Vue.component(Mtswipe.name, Mtswipe);
@@ -39,6 +41,7 @@ export {
   InputAutoclear,
   SearchAutoclear,
   Alert,
+    Upload,
   MultilevelChoose,
   Validity,
   Swipe,

@@ -9,7 +9,7 @@
                     <span>{{ item.name }}</span>
                 </div>
                 <div class="am-list-arrow" aria-hidden="true">
-                    <span class="am-icon arrow horizontal"></span>
+                    <span class="icon-arrow-right iconfont horizontal"></span>
                 </div>
             </router-link>
         </div>
